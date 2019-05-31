@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home
+<body>
+    <ul>
+        {% for org_hash in site.data.organisations %}
+        {% assign org = org_hash[1] %}
+            <li>
+                Email {{ org.contact.email }}
+            </li>
+    </ul>
+</body>
+</html>
