@@ -1,0 +1,45 @@
+backend:
+  name: "github"
+  repo: "wjxhenry/test-site-jekyll"
+  branch: "master" # Branch to update (optional; defaults to master)
+publish_mode: "editorial_workflow"
+media_folder: "images/uploads" # Media files will be stored in the repo under images/uploads
+collections:
+  - name: "organisation"
+    label: "Organisation"
+    folder: "_data/organisations"
+    create: true
+    identifier_field: "organisation"
+    extension: "yml"
+    fields:
+      - label: "Schema Version"
+        name: "schemaVersion"
+        widget: "hidden"
+        default: "1.0"
+      - label: "Admin Code"
+        name: "adminCode"
+        widget: "hidden"
+        default: "?"
+      - label: "Project"
+        name: "releases"
+        widget: "list"
+        fields:
+          - label: "Contact information for the project" # Liquid tags for multiple languages??
+            name: "contact"
+            widget: "object"
+            fields:
+              - label: "URL"
+                name: "url"
+                widget: "object"
+                fields:
+                  - label: "English URL"
+                    name: "en"
+                    widget: "string"
+                    pattern: [".{2,}", "Must have at least 2 characters"]
+                  - label: "French URL"
+                    name: "fr"
+                    widget: "string"
+                    pattern: [".{2,}", "Must have at least 2 characters"]
+              - label: "Email"
+                name: "email"
+                widget: "string"
