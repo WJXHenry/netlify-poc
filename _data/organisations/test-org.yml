@@ -8,3 +8,9 @@ releases:
         en: 'htttp://www.someurl.com'
         fr: 'htttp://www.someurl.com'
     name: NewProject
+  - contact:
+      email: anotheremail.email.com
+      url:
+        en: anotherurl.com
+        fr: anotherurl.com
+    name: Another Project
