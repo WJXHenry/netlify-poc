@@ -1,0 +1,16 @@
+schemaVersion: '1.0'
+adminCode: '?'
+organisation: test-org
+releases:
+  - contact:
+      email: someemail@email.com
+      url:
+        en: 'htttp://www.someurl.com'
+        fr: 'htttp://www.someurl.com'
+    name: NewProject
+  - contact:
+      email: anotheremail.email.com
+      url:
+        en: anotherurl.com
+        fr: anotherurl.com
+    name: Another Project
