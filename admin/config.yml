@@ -30,7 +30,7 @@ collections:
           - label: "Project Name"
             name: "name"
             widget: "string"
-            pattern: [".{2,", "Must have at least 2 characters"]
+            pattern: [".{2,}", "Must have at least 2 characters"]
           - label: "Contact information for the project" # Liquid tags for multiple languages??
             name: "contact"
             widget: "object"
